@@ -1,8 +1,0 @@
-apiVersion: v1
-entries:
-  nextjs-chart:
-  - apiVersion: v2
-    name: nextjs-chart
-    version: 0.1.0
-    urls:
-    - https://raw.githubusercontent.com/uliherwig/nextjs-chart/main/nextjs-chart-0.1.0.tgz

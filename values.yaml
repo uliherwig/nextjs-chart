@@ -38,9 +38,13 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
+# service:
+#   type: LoadBalancer
+#   port: 3000
+#   targetPort: 3000
 service:
-  type: LoadBalancer
-  port: 3000
+  type: NodePort
+  port: 80
   targetPort: 3000
 
 ingress:
@@ -74,11 +78,12 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /
-    port: http
+    port: 3000
 readinessProbe:
   httpGet:
     path: /
-    port: http
+    port: 3000
+
 
 autoscaling:
   enabled: false
@@ -105,3 +110,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+
+
