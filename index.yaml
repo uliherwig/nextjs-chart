@@ -3,13 +3,13 @@ entries:
   nextjs-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-15T15:12:03.7219654+01:00"
+    created: "2025-01-15T15:32:53.7634873+01:00"
     description: A Helm chart for Kubernetes
-    digest: 0c0f43ebdc4fe6d0f5ba633a57a25f5dae884f84547a3bf0f4dc4e3cbfdd85f0
+    digest: 34f738d5e8a3d2c03e6354414af2acea1abcd4a0f55877798a111595442a8992
     icon: https://example.com/path/to/your/icon.png
     name: nextjs-chart
     type: application
     urls:
-    - nextjs-chart-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-01-15T15:12:03.7214509+01:00"
+    - nextjs-chart-0.2.0.tgz
+    version: 0.2.0
+generated: "2025-01-15T15:32:53.7634873+01:00"

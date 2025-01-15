@@ -38,14 +38,14 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
+service:
+  type: LoadBalancer
+  port: 3000
+  targetPort: 3000
 # service:
-#   type: LoadBalancer
+#   type: NodePort
 #   port: 3000
 #   targetPort: 3000
-service:
-  type: NodePort
-  port: 80
-  targetPort: 3000
 
 ingress:
   enabled: true
